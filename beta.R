@@ -20,15 +20,7 @@ load("/mnt/raid5/zhangych/EarlyVir/Phyloseq_V4_1/bray_201216/OTU.RData")
 res <- res[sort(row.names(res)),]
 
 
-res$names <- c("AB usage before 6 months old","AB usage before 1 year old","AB usage during pregnancy","AB usage during birth",
-"Mother AB usage during birth","Weight at birth",
-"Birth induction","Still breast fed at sampling time","Cat or Dog","Cow milk in diet starting day",
-"Daycare at sampling time","Delivery","Delivery method","Education",
-"Egg in diet starting days","First antifungus","First AB usage","Fishoil during pregnancy",
-"Fish in diet starting days","Gestational age","Hospitalized after birth","Income", "Low brith weight (< 2.5kg)",
-"Mother BMI","Mother age","Older siblings","Preeclampsia",
-"Smoking during pregnancy","Race","Type of living environment","Sex",
-"Solely breast feeding days")
+res$names <- row.names(res)
 
 
 res$group <- c("Postnatal", "Postnatal", "Prenatal", "Perinatal",
@@ -119,15 +111,7 @@ res$symbol[res$symbol == "."] = ""
 
 
 #barplot
-res$names <- c("AB usage before 6 months old","AB usage before 1 year old","AB usage during pregnancy","AB usage during birth",
-"Mother AB usage during birth","Weight at birth",
-"Birth induction","Still breast fed at sampling time","Cat or Dog","Cow milk in diet starting day",
-"Daycare at sampling time","Delivery","Delivery method","Education",
-"Egg in diet starting days","First antifungus","First AB usage","Fishoil during pregnancy",
-"Fish in diet starting days","Gestational age","Hospitalized after birth","Income", "Low brith weight (< 2.5kg)",
-"Mother BMI","Mother age","Older siblings","Preeclampsia",
-"Smoking during pregnancy","Race","Type of living environment","Sex",
-"Solely breast feeding days")
+res$names <- row.names(res)
 
 
 res$group <- c("Postnatal", "Postnatal", "Prenatal", "Perinatal",
